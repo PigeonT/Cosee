@@ -1,0 +1,79 @@
+@import "materialize/css/materialize.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+head {
+  position: fixed;
+}
+nav a.btn-floating.red {
+  background-color: #26a69a;
+}
+main.container {
+  width: 100%;
+  margin: 50px 46px 0px;
+  position: relative;
+}
+.album-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.album-container ul.carousel-container {
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  /*  > .control-panel.left {
+                cursor : pointer;
+                transform : rotate(-90deg);
+                
+            }
+            > .control-panel.right {
+                cursor : pointer;
+                transform : rotate(90deg);
+            } 
+          // 
+        div.carousel-direction-controller {
+            display: inline-block;
+            div.owl-page {
+                display: inline-block;
+                span {
+                    display: inline-block;
+                    zoom: 1;
+                    cursor: pointer;
+                    background-color: #869791;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 7px;
+                    border-radius: 20px;
+                }
+            }
+        }
+        // */
+}
+.album-container ul.carousel-container li.album {
+  width: 450px;
+  height: 350px;
+  display: none;
+}
+.album-container ul.carousel-container li.active {
+  display: inline-block;
+  text-align: center;
+}
+.album-container ul.carousel-container li.active img {
+  position: relative;
+}
+span.tooltipped-text {
+  display: none;
+}
+a[target="_self"]:hover span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 210px;
+  font-size: 1.5em;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="priphoto" ng-cloak>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Privatbereich</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <nav class="nav-wrapper" id="navid">
+             <div class="material-icons" name="searchicon">search</div>
+             <input id="searcharea" type="text" placeholder="Write whatever you wanna search"/> 
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container" ng-controller="albumcontroller" >
+        <div class="album-container">
+             <ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show" />
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+<ul class="carousel-container">
+                <div class="carousel-album-container">
+                    <a href="" target="_self" ><!--href="pages/private_pages.html"-->
+                        <li ng-class="{'active' : album.active, 'album' : !album.active}" ng-repeat="album in albums">
+                            <img ng-src="{{album.position}}" width="300" height="200" alt="{{album.position}}"
+                            ng-mouseover="show=!show" ng-mouseleave="show=!show"/>
+                            <span ng-class="{'notshow' : !show,'show' : show }" id="viewalbumspan{{album.id}}" class="tooltipped-text flow-text">view your album</span>
+                        </li>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <a href="#modal1" class="material-icons uploading_file modal-trigger" ng-click="showfileuploadingdialog = !showfileuploadingdialog; uploadfile()">publish</a>
+    </main>
+    <!--modal-trigger -->
+    <div ng-show="notshowfileuploadingdialog" class="fileupload-dialog">
+        <form action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file"/>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="path-file validate" type="text">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <form action="#">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>Uploading</span>
+                        <input type="file" placeholder="upload your albums">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="path-file validate" type="text">
+                    </div>
+                </div>
+            </form>
+
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Upload</a>
+        </div>
+    </div>
+</div>
+
+</body>
+<!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/home/pigeon/Documents/Programming/Cosee/pri_photo/css/materialize/js/materialize.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+</html>
